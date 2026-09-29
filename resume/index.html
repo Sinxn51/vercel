@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinan Manna &bull; Resume Repository</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg: #ece6dc;
+      --card-bg: #f7f3eb;
+      --dark: #151413;
+      --muted: #5e5a54;
+      --border: rgba(21, 20, 19, 0.16);
+      --font-serif: 'Cormorant Garamond', serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+    }
+    .resume-wrapper {
+      max-width: 820px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1.5px solid var(--dark);
+      border-radius: 4px;
+      padding: 3rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    }
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--dark);
+      text-decoration: none;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--dark);
+      padding-bottom: 2px;
+    }
+    .back-nav:hover {
+      opacity: 0.7;
+    }
+    .title-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      margin-bottom: 0.6rem;
+    }
+    p.lead {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+    }
+    .resume-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .resume-item {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      transition: all 0.2s ease;
+    }
+    .resume-item:hover {
+      border-color: var(--dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    }
+    .item-left {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .pdf-badge-icon {
+      font-size: 2.2rem;
+      color: var(--dark);
+    }
+    .item-title {
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+    }
+    .item-meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .item-actions {
+      display: flex;
+      gap: 0.6rem;
+    }
+    .btn {
+      padding: 0.55rem 1.1rem;
+      border-radius: 2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .btn-preview {
+      border: 1px solid var(--dark);
+      color: var(--dark);
+      background: transparent;
+    }
+    .btn-preview:hover {
+      background: var(--dark);
+      color: var(--bg);
+    }
+    .btn-download {
+      background: var(--dark);
+      color: var(--bg);
+      border: 1px solid var(--dark);
+    }
+    .btn-download:hover {
+      background: #2b2927;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .resume-wrapper { padding: 1.8rem 1.2rem; }
+      .resume-item { flex-direction: column; align-items: flex-start; }
+      .item-actions { width: 100%; }
+      .item-actions .btn { flex: 1; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <a href="../index.html" class="back-nav"><i class="fa-solid fa-arrow-left-long"></i> RETURN TO MAIN PORTFOLIO</a>
+    <span class="title-tag">CURATED REPOSITORY</span>
+    <h1>Sinan Manna &bull; Resumes</h1>
+    <p class="lead">Official downloadable PDF resumes curated for recruiters, hiring managers, and clients.</p>
+
+    <div class="resume-list">
+      <div class="resume-item">
+        <div class="item-left">
+          <i class="fa-solid fa-file-pdf pdf-badge-icon"></i>
+          <div>
+            <div class="item-title">Sinan_Manna_Resume.pdf</div>
+            <div class="item-meta">Master Comprehensive Resume (Full Stack + Python Backend) &bull; 105 KB</div>
+          </div>
+        </div>
+        <div class="item-actions">
+          <a href="Sinan_Manna_Resume.pdf" target="_blank" class="btn btn-preview"><i class="fa-regular fa-eye"></i> Preview</a>
+          <a href="Sinan_Manna_Resume.pdf" download class="btn btn-download"><i class="fa-solid fa-arrow-down"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <div class="item-left">
+          <i class="fa-solid fa-file-pdf pdf-badge-icon"></i>
+          <div>
+            <div class="item-title">Sinan_Manna_FastAPI_Python_Resume.pdf</div>
+            <div class="item-meta">FastAPI & Python Specialized (SQLModel, Celery, Docker) &bull; 77 KB</div>
+          </div>
+        </div>
+        <div class="item-actions">
+          <a href="Sinan_Manna_FastAPI_Python_Resume.pdf" target="_blank" class="btn btn-preview"><i class="fa-regular fa-eye"></i> Preview</a>
+          <a href="Sinan_Manna_FastAPI_Python_Resume.pdf" download class="btn btn-download"><i class="fa-solid fa-arrow-down"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <div class="item-left">
+          <i class="fa-solid fa-file-pdf pdf-badge-icon"></i>
+          <div>
+            <div class="item-title">Sinan_Manna_FullStack_Resume.pdf</div>
+            <div class="item-meta">Full-Stack Web Specialized (React.js, Node.js, Express, MongoDB) &bull; 72 KB</div>
+          </div>
+        </div>
+        <div class="item-actions">
+          <a href="Sinan_Manna_FullStack_Resume.pdf" target="_blank" class="btn btn-preview"><i class="fa-regular fa-eye"></i> Preview</a>
+          <a href="Sinan_Manna_FullStack_Resume.pdf" download class="btn btn-download"><i class="fa-solid fa-arrow-down"></i> Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

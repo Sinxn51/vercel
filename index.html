@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sinan Manna — Full Stack Developer & Python Backend Engineer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Sinan Manna — Full Stack Developer and Python/FastAPI Backend Engineer building scalable web architectures, RESTful APIs, and AI-integrated systems.">
+  <meta name="author" content="Sinan Manna">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Sinan Manna — Full Stack Developer & Python Backend Engineer">
+  <meta property="og:description" content="Explore production web apps, RESTful APIs, AI-integrated platforms, and download resume versions.">
+  <meta property="og:image" content="./assets/sinan_cutout.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23171717'/><text y='68' x='15' fill='%23FAF8F5' font-size='56' font-family='sans-serif' font-weight='bold'>SM</text></svg>">
+  
+  <!-- Google Fonts: Anton (for giant display headlines), Playfair Display (editorial serif italics), and Archivo (clean precision body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons & Devicons for exact tech logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="ainan-theme">
+
+  <!-- TOP HEADER (Exact match to Mariana & Ainan editorial design) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      
+      <!-- Brand Logo Block: Clean Monogram with 'SM' -->
+      <a href="#top" class="brand-badge-link" aria-label="Sinan Manna Home">
+        <span class="brand-box">
+          <span class="brand-diag-slash"></span>
+          <span class="brand-initials"><span>S</span><span>M</span></span>
+        </span>
+        <span class="brand-name-text">Sinan Manna</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#top" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#work" class="nav-item">Work</a>
+        <a href="#stack" class="nav-item">Stack</a>
+        <a href="#resume-hub" class="nav-item nav-item-highlight">Resume</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Live Interactive Palette Switcher -->
+      <div class="palette-switcher" aria-label="Color Palette Switcher" title="Switch Color Theme">
+        <button class="palette-dot-btn active" data-palette="" style="background:#171717; border: 1.5px solid #C7B8A7;" title="Sand & Obsidian (User Reference)"></button>
+        <button class="palette-dot-btn" data-palette="olive" style="background:#526338;" title="Luxury Olive & Ivory"></button>
+        <button class="palette-dot-btn" data-palette="cobalt" style="background:#2563EB;" title="Cobalt Tech"></button>
+        <button class="palette-dot-btn" data-palette="amber" style="background:#C2410C;" title="Terracotta Sand"></button>
+        <button class="palette-dot-btn" data-palette="dark" style="background:#0F1115; border:1.5px solid #E2E8F0;" title="Obsidian Dark Mode"></button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar-line"></span>
+        <span class="bar-line"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Slide Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <span class="brand-box small">
+          <span class="brand-initials"><span>S</span><span>M</span></span>
+        </span>
+        <span class="drawer-title">Sinan Manna</span>
+        <button class="drawer-close-btn" id="drawerCloseBtn">&times;</button>
+      </div>
+      <div class="drawer-nav">
+        <a href="#top" class="drawer-link">Home</a>
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#experience" class="drawer-link">Experience</a>
+        <a href="#work" class="drawer-link">Selected Work (6)</a>
+        <a href="#stack" class="drawer-link">Tech Stack</a>
+        <a href="#resume-hub" class="drawer-link text-primary font-bold">Resume Repository</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+      </div>
+      <div class="drawer-footer">
+        <a href="./resume/Sinan_Manna_Resume.pdf" download class="btn-solid-red full-width">
+          <i class="fa-solid fa-arrow-down"></i> Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- HERO SECTION (Editorial Sand & Obsidian matching user reference) -->
+    <section id="top" class="hero-section">
+      <div class="hero-container">
+        
+        <!-- Breadcrumb Top Bar -->
+        <div class="hero-eyebrow-row">
+          <span class="eyebrow-left">FULL STACK DEVELOPER | PYTHON & FASTAPI • RESTFUL APIS • CLOUD ARCHITECTURE • AI INTEGRATION</span>
+          <span class="eyebrow-right">BENGALURU, KARNATAKA, INDIA <span class="text-primary font-bold">/ OPEN TO WORK ✦</span></span>
+        </div>
+
+        <div class="hero-split-grid">
+          
+          <!-- Left: Editorial Magazine Headline & Pitch -->
+          <div class="hero-left-content">
+            <div class="hero-sparkle-tag">
+              <span class="editorial-star">✦</span>
+              <span class="tag-label">FULL-STACK & PYTHON BACKEND ARCHITECT</span>
+            </div>
+
+            <h1 class="giant-display-title">
+              <span class="title-serif-italic">Scalable</span>
+              <span class="title-line text-ink">BACKENDS.</span>
+              <span class="title-serif-italic">& Full-Stack</span>
+              <span class="title-line text-ink">SYSTEMS.</span>
+            </h1>
+
+            <div class="hero-callout-quote">
+              <h2 class="hero-statement-lead">I DESIGN & BUILD DIGITAL ARCHITECTURES THAT SCALE, ENGAGE, AND DELIVER MEASURABLE RESULTS.</h2>
+              <p>
+                I'm <strong>Sinan Manna</strong>. I like building the whole thing. From the first idea to the final deployment, 
+                I enjoy designing scalable database schemas, writing clean Python and React code, building optimized RESTful APIs, 
+                slashing query response times by 40%, and building AI-integrated tools that solve real problems.
+              </p>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="hero-actions-row">
+              <a href="#work" class="btn-solid-red">
+                <span>VIEW PROJECTS</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="./resume/Sinan_Manna_Resume.pdf" download class="btn-outline-ink">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>DOWNLOAD RESUME</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Cutout Portrait Photo Clean on Canvas -->
+          <div class="hero-right-portrait">
+            <div class="portrait-card-frame">
+              <img src="./assets/sinan_cutout.png" alt="Sinan Manna — Full Stack & Python Backend Developer" class="portrait-cutout-img" loading="eager">
+
+              <!-- Floating Pill Badge -->
+              <div class="hero-floating-stat-badge">
+                <span class="status-indicator-dot"></span>
+                <span>CGPA 8.0+ &bull; BE Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INFINITE ANIMATED TECH MARQUEE (Eye-catching animated banner) -->
+    <div class="marquee-strip-wrapper" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">PYTHON <span class="star-accent">✦</span></span>
+        <span class="marquee-item">FASTAPI <span class="star-accent">✦</span></span>
+        <span class="marquee-item">REACT.JS <span class="star-accent">✦</span></span>
+        <span class="marquee-item">NODE.JS <span class="star-accent">✦</span></span>
+        <span class="marquee-item">MONGODB MOTOR <span class="star-accent">✦</span></span>
+        <span class="marquee-item">AWS EC2/S3 <span class="star-accent">✦</span></span>
+        <span class="marquee-item">DOCKER <span class="star-accent">✦</span></span>
+        <span class="marquee-item">CELERY & REDIS <span class="star-accent">✦</span></span>
+        <span class="marquee-item">GOOGLE GEMINI 1.5 FLASH <span class="star-accent">✦</span></span>
+        <span class="marquee-item">POSTGRESQL <span class="star-accent">✦</span></span>
+        <span class="marquee-item">SQLMODEL & ALEMBIC <span class="star-accent">✦</span></span>
+        <span class="marquee-item">SCIKIT-LEARN <span class="star-accent">✦</span></span>
+        
+        <!-- Duplicated for seamless loop -->
+        <span class="marquee-item">PYTHON <span class="star-accent">✦</span></span>
+        <span class="marquee-item">FASTAPI <span class="star-accent">✦</span></span>
+        <span class="marquee-item">REACT.JS <span class="star-accent">✦</span></span>
+        <span class="marquee-item">NODE.JS <span class="star-accent">✦</span></span>
+        <span class="marquee-item">MONGODB MOTOR <span class="star-accent">✦</span></span>
+        <span class="marquee-item">AWS EC2/S3 <span class="star-accent">✦</span></span>
+        <span class="marquee-item">DOCKER <span class="star-accent">✦</span></span>
+        <span class="marquee-item">CELERY & REDIS <span class="star-accent">✦</span></span>
+        <span class="marquee-item">GOOGLE GEMINI 1.5 FLASH <span class="star-accent">✦</span></span>
+        <span class="marquee-item">POSTGRESQL <span class="star-accent">✦</span></span>
+        <span class="marquee-item">SQLMODEL & ALEMBIC <span class="star-accent">✦</span></span>
+        <span class="marquee-item">SCIKIT-LEARN <span class="star-accent">✦</span></span>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION & 2x2 STATS (Exact match to ainanai.vercel.app) -->
+    <section id="about" class="section-rule py-section">
+      <div class="content-container">
+        
+        <div class="about-split-grid">
+          
+          <!-- Left: About Narrative -->
+          <div class="about-left">
+            <div class="section-label-tag">
+              <span class="square-bullet"></span>
+              <span>ABOUT ME</span>
+            </div>
+
+            <h2 class="section-headline-display">
+              <span class="text-ink block">FULL STACK DEVELOPER,</span>
+              <span class="text-primary block">PYTHON BACKEND</span>
+              <span class="text-primary block">& AI INTEGRATION ENGINEER.</span>
+            </h2>
+
+            <p class="about-body-text">
+              I have a habit of saying "we can optimize that." Most of the time, it turns into an asynchronous FastAPI backend,
+              an intuitive React user interface, or an AI-driven workflow that reduces query latency and saves hours of manual work.
+              From QR ordering systems and e-commerce platforms to civil aviation price index trackers, 
+              I enjoy building software that people actually rely on.
+            </p>
+          </div>
+
+          <!-- Right: 2x2 Big Red Numbers & Education Subtext -->
+          <div class="about-right-stats">
+            <dl class="stats-2x2-grid">
+              
+              <div class="stat-cell">
+                <dt class="stat-label">PRODUCTION WEB APPS</dt>
+                <dd class="stat-number">3+</dd>
+              </div>
+
+              <div class="stat-cell">
+                <dt class="stat-label">QUERY LATENCY REDUCED</dt>
+                <dd class="stat-number">40%</dd>
+              </div>
+
+              <div class="stat-cell">
+                <dt class="stat-label">ML MODEL ACCURACY</dt>
+                <dd class="stat-number">87%</dd>
+              </div>
+
+              <div class="stat-cell">
+                <dt class="stat-label">ACTIVE USERS SERVED</dt>
+                <dd class="stat-number">500+</dd>
+              </div>
+
+            </dl>
+
+            <p class="education-subnote">
+              Studying Computer Science & Engineering at <strong>Anjuman Institute of Technology & Management</strong> 
+              (CGPA: 8.0+/10) while engineering high-performance systems for real users.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (Exact match to ainanai.vercel.app: WHERE I'VE SHIPPED) -->
+    <section id="experience" class="section-rule py-section">
+      <div class="content-container">
+        
+        <div class="experience-split-layout">
+          
+          <!-- Sticky Left Header -->
+          <div class="experience-sticky-left">
+            <div class="section-label-tag">
+              <span class="square-bullet"></span>
+              <span>EXPERIENCE</span>
+            </div>
+            <h2 class="section-headline-display">
+              <span class="text-ink block">WHERE I'VE</span>
+              <span class="text-primary block">SHIPPED.</span>
+            </h2>
+          </div>
+
+          <!-- Right Timeline Entries -->
+          <div class="experience-timeline-entries">
+            
+            <!-- Company 1: Azmath -->
+            <article class="timeline-article">
+              <div class="article-top-line">
+                <h3 class="company-heading">Azmath</h3>
+                <span class="timeline-dates">Nov 2025 — Present</span>
+              </div>
+              <p class="role-location-sub">
+                <strong>Full Stack Developer Intern</strong> &mdash; <span class="text-muted">Bengaluru, India</span>
+              </p>
+              <p class="highlight-tagline text-primary">
+                React.js, Node.js, Express.js, MongoDB, AWS EC2/S3 &bull; 500+ active users & -40% query response time
+              </p>
+              <ul class="timeline-bullet-list">
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Building and maintaining <strong>3+ full-stack web applications</strong> using React.js, Node.js, Express.js, and MongoDB, actively serving 500+ users.</span>
+                </li>
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Architected and executed optimized RESTful APIs and secure JWT authentication, reducing database query response times by <strong>40%</strong>.</span>
+                </li>
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Collaborating in cross-functional Agile sprints to gather product requirements, design scalable schemas, and deliver features on schedule.</span>
+                </li>
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Utilized <strong>AWS (EC2, S3)</strong> for application deployment and cloud asset management, maintaining production uptime and system reliability.</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Company 2: Buildbench Company -->
+            <article class="timeline-article">
+              <div class="article-top-line">
+                <h3 class="company-heading">Buildbench Company</h3>
+                <span class="timeline-dates">June 2026 — Aug 2026</span>
+              </div>
+              <p class="role-location-sub">
+                <strong>Web Developer Intern</strong> &mdash; <span class="text-muted">Bengaluru, India</span>
+              </p>
+              <p class="highlight-tagline text-primary">
+                Hotel Bus, FastAPI, MongoDB (Motor), Gemini 1.5 Flash &bull; Real-time AI Waitstaff ordering platform
+              </p>
+              <ul class="timeline-bullet-list">
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Developed, tested, and maintained company and client websites using modern web technologies as part of a hands-on engineering internship.</span>
+                </li>
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Built <strong>Hotel Bus</strong>, a real-time AI-powered waiter platform enabling restaurant patrons to scan table QR codes, chat with an AI assistant (Kai), and place orders instantly.</span>
+                </li>
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Developed backend services with <strong>FastAPI</strong> and <strong>MongoDB (Motor)</strong> for asynchronous data operations, integrating the <strong>Gemini API</strong> for personalized recommendations.</span>
+                </li>
+                <li>
+                  <span class="red-dash"></span>
+                  <span>Maintained professional code quality with component modularity and RESTful API best practices throughout the internship.</span>
+                </li>
+              </ul>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION (All 6 Projects from Resume) -->
+    <section id="work" class="section-rule py-section">
+      <div class="content-container">
+        
+        <!-- Dark Inverted Bar matching User Reference -->
+        <div class="selected-work-dark-bar">
+          <div class="bar-left-tag">
+            <span class="square-bullet-light">✦</span>
+            <span class="bar-title">SELECTED WORK</span>
+          </div>
+          <span class="bar-subtitle">PRODUCTION SYSTEMS &bull; REST APIS &bull; AI INTEGRATION</span>
+          <a href="#work" class="bar-link">ALL 6 PROJECTS <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="work-header-block">
+          <div class="section-label-tag">
+            <span class="square-bullet"></span>
+            <span>PORTFOLIO '26</span>
+          </div>
+          <h2 class="section-headline-display">
+            <span class="title-serif-italic">Scalable</span>
+            <span class="text-ink block">SYSTEMS, NOT SIDE PROJECTS.</span>
+          </h2>
+        </div>
+
+        <!-- 6 Projects Grid -->
+        <div class="projects-card-grid">
+          
+          <!-- Project 01: Hotel Bus -->
+          <article class="project-box-card">
+            <div class="card-inner-pad">
+              <div class="project-num-date">
+                <span>01 &bull; 2026</span>
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="arrow-ext" aria-label="Open GitHub">↗</a>
+              </div>
+              <h3 class="project-box-title text-primary">Hotel Bus</h3>
+              <p class="project-sub-role">AI-Powered Waiter Platform</p>
+              <p class="project-desc-body">
+                A real-time ordering platform enabling restaurant customers to scan table QR codes, chat with an AI waiter (Kai) powered by Google Gemini 1.5 Flash, and place orders. Built with an asynchronous FastAPI and Motor MongoDB backend.
+              </p>
+              <div class="project-tech-badges">
+                <span>FastAPI</span>
+                <span>React.js</span>
+                <span>Motor (MongoDB)</span>
+                <span>Gemini Flash</span>
+                <span>Vite</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Tohfah Store -->
+          <article class="project-box-card">
+            <div class="card-inner-pad">
+              <div class="project-num-date">
+                <span>02 &bull; 2025</span>
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="arrow-ext" aria-label="Open GitHub">↗</a>
+              </div>
+              <h3 class="project-box-title text-primary">Tohfah</h3>
+              <p class="project-sub-role">Full-Stack E-Commerce Platform</p>
+              <p class="project-desc-body">
+                Production-grade platform managing a catalog of 150+ products with stateless JWT authentication, cart state management, and secure checkout. Optimized MongoDB queries achieving a 2-second average page load time.
+              </p>
+              <div class="project-tech-badges">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>JWT Auth</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: AITM Airlines -->
+          <article class="project-box-card">
+            <div class="card-inner-pad">
+              <div class="project-num-date">
+                <span>03 &bull; 2026</span>
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="arrow-ext" aria-label="Open GitHub">↗</a>
+              </div>
+              <h3 class="project-box-title text-primary">AITM Airlines</h3>
+              <p class="project-sub-role">National Airfare Intelligence & FareX Index</p>
+              <p class="project-desc-body">
+                Built for Smart India Hackathon 2026 (Problem Statement 26056 by MoSPI). Scrapes live fare data across major Indian carriers (IndiGo, Air India, SpiceJet) across 80 city pairs with 30-day forward trend tracking.
+              </p>
+              <div class="project-tech-badges">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Web Scraping</span>
+                <span>Next.js</span>
+                <span>Data Analysis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: Crop Suggestor -->
+          <article class="project-box-card">
+            <div class="card-inner-pad">
+              <div class="project-num-date">
+                <span>04 &bull; 2025</span>
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="arrow-ext" aria-label="Open GitHub">↗</a>
+              </div>
+              <h3 class="project-box-title text-primary">Crop Suggestor</h3>
+              <p class="project-sub-role">ML-Based Agricultural Tool</p>
+              <p class="project-desc-body">
+                Trained a Random Forest classifier in Python achieving 87% accuracy on a dataset of 10,000+ data points including rainfall, pH, and temperature. Responsive web interface utilized by 200+ active users.
+              </p>
+              <div class="project-tech-badges">
+                <span>Python</span>
+                <span>scikit-learn</span>
+                <span>Random Forest</span>
+                <span>Netlify</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05: AI Resume Builder & Job Matcher -->
+          <article class="project-box-card">
+            <div class="card-inner-pad">
+              <div class="project-num-date">
+                <span>05 &bull; 2025</span>
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="arrow-ext" aria-label="Open GitHub">↗</a>
+              </div>
+              <h3 class="project-box-title text-primary">Resume Matcher</h3>
+              <p class="project-sub-role">NLP-Based Career & Job Matching</p>
+              <p class="project-desc-body">
+                Intelligent resume parser with automated Natural Language Processing (NLP) extraction to parse candidate skills and match candidate profiles against 500+ live job vacancies with compatibility scoring.
+              </p>
+              <div class="project-tech-badges">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Text Parsing</span>
+                <span>scikit-learn</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 06: AI Diet Planner -->
+          <article class="project-box-card">
+            <div class="card-inner-pad">
+              <div class="project-num-date">
+                <span>06 &bull; 2025</span>
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="arrow-ext" aria-label="Open GitHub">↗</a>
+              </div>
+              <h3 class="project-box-title text-primary">AI Diet Planner</h3>
+              <p class="project-sub-role">Biometric Nutrition & Machine Learning</p>
+              <p class="project-desc-body">
+                An intelligent nutritional recommendation platform developed in Python that evaluates user biometrics, activity levels, and dietary targets to formulate customized daily meal plans with balanced macros.
+              </p>
+              <div class="project-tech-badges">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Data Science</span>
+                <span>Pandas</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECH STACK SECTION (Exact match to Screenshot 4: THE TOOLS I REACH FOR) -->
+    <section id="stack" class="section-rule py-section">
+      <div class="content-container">
+        
+        <div class="stack-header-block">
+          <div class="section-label-tag">
+            <span class="square-bullet"></span>
+            <span>TECH STACK</span>
+          </div>
+          <h2 class="section-headline-display">
+            <span class="text-ink block">THE TOOLS I</span>
+            <span class="text-primary block">REACH FOR.</span>
+          </h2>
+        </div>
+
+        <div class="stack-rows-wrapper">
+          
+          <!-- Row 1: Languages -->
+          <div class="stack-category-row">
+            <h3 class="stack-cat-title text-primary">Languages</h3>
+            <ul class="stack-icons-grid">
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-python-plain colored"></i></span>
+                <span class="tech-name">Python</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-javascript-plain colored"></i></span>
+                <span class="tech-name">JavaScript</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-typescript-plain colored"></i></span>
+                <span class="tech-name">TypeScript</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-c-plain colored"></i></span>
+                <span class="tech-name">C</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-java-plain colored"></i></span>
+                <span class="tech-name">Java</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-html5-plain colored"></i></span>
+                <span class="tech-name">HTML5</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-css3-plain colored"></i></span>
+                <span class="tech-name">CSS3</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-sqldeveloper-plain colored"></i></span>
+                <span class="tech-name">SQL</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Row 2: Frontend -->
+          <div class="stack-category-row">
+            <h3 class="stack-cat-title text-primary">Frontend</h3>
+            <ul class="stack-icons-grid">
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-react-original colored"></i></span>
+                <span class="tech-name">React</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-nextjs-plain text-ink"></i></span>
+                <span class="tech-name">Next.js</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-tailwindcss-plain colored"></i></span>
+                <span class="tech-name">Tailwind CSS</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-framermotion-original colored"></i></span>
+                <span class="tech-name">Framer Motion</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-vite-plain colored"></i></span>
+                <span class="tech-name">Vite</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-figma-plain colored"></i></span>
+                <span class="tech-name">Figma</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Row 3: Backend & Database -->
+          <div class="stack-category-row">
+            <h3 class="stack-cat-title text-primary">Backend & Database</h3>
+            <ul class="stack-icons-grid">
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-fastapi-plain colored"></i></span>
+                <span class="tech-name">FastAPI</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-nodejs-plain colored"></i></span>
+                <span class="tech-name">Node.js</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-express-original text-ink"></i></span>
+                <span class="tech-name">Express.js</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-mongodb-plain colored"></i></span>
+                <span class="tech-name">MongoDB</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-postgresql-plain colored"></i></span>
+                <span class="tech-name">Postgres</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-sqlite-plain colored"></i></span>
+                <span class="tech-name">SQLite</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-redis-plain colored"></i></span>
+                <span class="tech-name">Redis</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="fa-solid fa-network-wired text-primary"></i></span>
+                <span class="tech-name">REST APIs</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Row 4: AI & Cloud Infrastructure -->
+          <div class="stack-category-row">
+            <h3 class="stack-cat-title text-primary">AI & Cloud</h3>
+            <ul class="stack-icons-grid">
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="fa-solid fa-sparkles text-primary"></i></span>
+                <span class="tech-name">Gemini 1.5</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-scikitlearn-plain colored"></i></span>
+                <span class="tech-name">scikit-learn</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-amazonwebservices-plain colored"></i></span>
+                <span class="tech-name">AWS</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-docker-plain colored"></i></span>
+                <span class="tech-name">Docker</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-git-plain colored"></i></span>
+                <span class="tech-name">Git</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-github-original text-ink"></i></span>
+                <span class="tech-name">GitHub</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="fa-solid fa-list-check text-primary"></i></span>
+                <span class="tech-name">Celery</span>
+              </li>
+              <li class="tech-icon-item">
+                <span class="icon-frame"><i class="devicon-postman-plain colored"></i></span>
+                <span class="tech-name">Postman</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUME REPOSITORY SECTION (Dedicated folder download cards) -->
+    <section id="resume-hub" class="section-rule py-section">
+      <div class="content-container">
+        
+        <div class="resume-header-block">
+          <div class="section-label-tag">
+            <span class="square-bullet"></span>
+            <span>RESUME REPOSITORY</span>
+          </div>
+          <h2 class="section-headline-display">
+            <span class="text-ink block">CURATED CV &</span>
+            <span class="text-primary block">OFFICIAL RESUMES.</span>
+          </h2>
+          <p class="section-desc-lead">
+            Directly stored inside the verified <code>/resume/</code> folder. Click to preview in browser or download instantly.
+          </p>
+        </div>
+
+        <div class="resume-cards-grid">
+          
+          <!-- Master Resume -->
+          <div class="resume-file-card featured-resume">
+            <div class="resume-card-badge">PRIMARY</div>
+            <div class="resume-file-top">
+              <i class="fa-solid fa-file-pdf resume-icon-large text-primary"></i>
+              <div>
+                <h3 class="resume-file-name">Sinan Manna &mdash; Master Resume</h3>
+                <span class="resume-file-meta">Full Stack Developer & Python Backend &bull; 105 KB</span>
+              </div>
+            </div>
+            <p class="resume-file-desc">
+              All-round engineering document covering Anjuman Institute education (CGPA: 8.0+), production internships at Azmath & Buildbench, Smart India Hackathon 2026, and full technical competencies.
+            </p>
+            <div class="resume-file-actions">
+              <a href="./resume/Sinan_Manna_Resume.pdf" target="_blank" class="btn-outline-ink">
+                <i class="fa-regular fa-eye"></i> PREVIEW
+              </a>
+              <a href="./resume/Sinan_Manna_Resume.pdf" download="Sinan_Manna_Resume.pdf" class="btn-solid-red">
+                <i class="fa-solid fa-arrow-down"></i> DOWNLOAD
+              </a>
+            </div>
+          </div>
+
+          <!-- Python & FastAPI Resume -->
+          <div class="resume-file-card">
+            <div class="resume-card-badge">SPECIALIZED</div>
+            <div class="resume-file-top">
+              <i class="devicon-python-plain resume-icon-large colored"></i>
+              <div>
+                <h3 class="resume-file-name">FastAPI & Python Specialized</h3>
+                <span class="resume-file-meta">Backend Architecture, SQLModel, Celery, Docker &bull; 77 KB</span>
+              </div>
+            </div>
+            <p class="resume-file-desc">
+              Focused on scalable RESTful API design, Pydantic data validation, async Motor MongoDB, Celery task queues, Redis, and FastAPI developer certification (2026).
+            </p>
+            <div class="resume-file-actions">
+              <a href="./resume/Sinan_Manna_FastAPI_Python_Resume.pdf" target="_blank" class="btn-outline-ink">
+                <i class="fa-regular fa-eye"></i> PREVIEW
+              </a>
+              <a href="./resume/Sinan_Manna_FastAPI_Python_Resume.pdf" download="Sinan_Manna_FastAPI_Python_Resume.pdf" class="btn-solid-red">
+                <i class="fa-solid fa-arrow-down"></i> DOWNLOAD
+              </a>
+            </div>
+          </div>
+
+          <!-- Full Stack / MERN Resume -->
+          <div class="resume-file-card">
+            <div class="resume-card-badge">SPECIALIZED</div>
+            <div class="resume-file-top">
+              <i class="devicon-react-original resume-icon-large colored"></i>
+              <div>
+                <h3 class="resume-file-name">Full-Stack & React Specialized</h3>
+                <span class="resume-file-meta">React.js, Node.js, Express, MongoDB (MERN) &bull; 72 KB</span>
+              </div>
+            </div>
+            <p class="resume-file-desc">
+              Highlights front-to-back development with React.js, Vite, Framer Motion, Node.js/Express, JWT auth, Tohfah e-commerce, and full-stack MERN certification (Udemy 2025).
+            </p>
+            <div class="resume-file-actions">
+              <a href="./resume/Sinan_Manna_FullStack_Resume.pdf" target="_blank" class="btn-outline-ink">
+                <i class="fa-regular fa-eye"></i> PREVIEW
+              </a>
+              <a href="./resume/Sinan_Manna_FullStack_Resume.pdf" download="Sinan_Manna_FullStack_Resume.pdf" class="btn-solid-red">
+                <i class="fa-solid fa-arrow-down"></i> DOWNLOAD
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Exact match to ainanai.vercel.app) -->
+    <section id="contact" class="section-rule py-section">
+      <div class="content-container">
+        
+        <div class="contact-split-layout">
+          
+          <div class="contact-left">
+            <div class="section-label-tag">
+              <span class="square-bullet"></span>
+              <span>CONTACT</span>
+            </div>
+            <h2 class="section-headline-display">
+              <span class="text-ink block">LET'S BUILD</span>
+              <span class="text-primary block">SOMETHING.</span>
+            </h2>
+            <p class="contact-narrative">
+              Have an engineering opportunity or a project in mind? I'm available for full-time full stack & backend developer roles, contracts, and technical discussions.
+            </p>
+            <a href="mailto:sinanmanna3@gmail.com" class="btn-solid-red inline-flex">
+              <span>START A CONVERSATION</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="contact-right-table">
+            
+            <div class="contact-row">
+              <span class="c-label">EMAIL</span>
+              <div class="c-val-box">
+                <a href="mailto:sinanmanna3@gmail.com" class="c-link">sinanmanna3@gmail.com</a>
+                <button class="copy-pill-btn" onclick="copyToClipboard('sinanmanna3@gmail.com', 'Email copied!')">Copy</button>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="c-label">PHONE</span>
+              <div class="c-val-box">
+                <a href="tel:+919731281169" class="c-link">+91-9731281169</a>
+                <button class="copy-pill-btn" onclick="copyToClipboard('+919731281169', 'Phone copied!')">Copy</button>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="c-label">LINKEDIN</span>
+              <div class="c-val-box">
+                <a href="https://linkedin.com/in/sinan-manna" target="_blank" rel="noopener noreferrer" class="c-link">linkedin.com/in/sinan-manna</a>
+                <span class="arrow-ext">↗</span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="c-label">GITHUB</span>
+              <div class="c-val-box">
+                <a href="https://github.com/Sinxn51" target="_blank" rel="noopener noreferrer" class="c-link">github.com/Sinxn51</a>
+                <span class="arrow-ext">↗</span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="c-label">LOCATION</span>
+              <div class="c-val-box">
+                <span class="c-text">Bengaluru, Karnataka, India</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER BAR -->
+  <footer class="site-footer">
+    <div class="content-container footer-flex-row">
+      <div class="footer-brand-side">
+        <span class="brand-box small">
+          <span class="brand-initials"><span>S</span><span>M</span></span>
+        </span>
+        <span class="footer-brand-name">Sinan Manna &bull; Full Stack & Backend Engineer</span>
+      </div>
+      <div class="footer-meta-side">
+        <p>&copy; <span id="currentYear">2026</span> Sinan Manna. Built with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Alert -->
+  <div id="toast" class="toast-popup" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
