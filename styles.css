@@ -553,9 +553,9 @@ img {
 
 .hero-split-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.08fr 0.92fr;
   align-items: stretch;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .hero-left-content {
@@ -634,7 +634,7 @@ img {
   line-height: 1.4;
 }
 
-/* Hero Right Portrait Frame */
+/* Hero Right Portrait Frame - Large & Leveled */
 .hero-right-portrait {
   border-left: 1px solid var(--border-rule);
   display: flex;
@@ -649,7 +649,7 @@ img {
 .portrait-card-frame {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 540px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -659,21 +659,21 @@ img {
 .portrait-cutout-img {
   width: 100%;
   height: auto;
-  max-height: 560px;
+  max-height: 680px;
   object-fit: contain;
   object-position: bottom center;
   filter: contrast(1.05) saturate(1.02);
-  transform: translateY(-28px);
+  transform: translateY(-8px);
   transition: transform var(--transition-smooth);
 }
 
 .portrait-card-frame:hover .portrait-cutout-img {
-  transform: translateY(-34px) scale(1.02);
+  transform: translateY(-14px) scale(1.02);
 }
 
 .hero-floating-stat-badge {
   position: absolute;
-  bottom: 24px;
+  bottom: 28px;
   background-color: var(--ink);
   color: #FFFFFF;
   font-family: var(--font-mono);
